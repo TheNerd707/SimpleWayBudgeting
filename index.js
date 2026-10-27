@@ -9,12 +9,14 @@ import { fileURLToPath } from 'url';
 const app = express()
 
 app.set('view engine', 'ejs')
-app.set('views', path.join(__dirname, 'views'))
 
 //This is bs, I hate modules ik why they are better but this is shit
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const publicPath = path.join(__dirname, 'public')
+
+app.set('views', path.join(__dirname, 'views'))
+
 app.use(express.static(publicPath))
 app.use('/public', express.static(publicPath))
 

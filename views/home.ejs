@@ -4,9 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SimpleWay Budgeting</title>
-    <link rel="icon" href="/public/imgs/SIMPLEWAY_BLUEBG_NOTXT.png?v=1" type="image/png" sizes="500x500">
+    <link rel="icon" href="/public/imgs/SIMPLEWAY_BLUEBG_NOTXT_CIRCLE.png" type="image/png" sizes="500x500">
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="header">
+        <img src="/public/imgs/SimpleWay_WhiteFG_BlueBG.png" alt="SimpleWay Logo" class="headLogo">
+        <a href="https://discord.com/notfound" target="_blank" rel="noopener noreferrer" class="supportServer">Support Server</a>
+        <a href="/about" class="about">About</a>
+    </div>
+
+    <div class="middle">
+        <div class="welcome">Welcome to</div>
+        <img src="/public/imgs/SimpleWay_WhiteFG_BlueBG.png" alt="SimpleWay logo" class="midLogo">
+        <div class="simple">Simple</div>
+        <div class="way">WAY</div>
+        <div class="budgeting">Budgeting</div>
+        <button class="signup button">Sign-up</button>
+        <button class="login button">Login</button>
+    </div>
 </body>
+
+<style>
+    body {
+        background-color: #18191A;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+        background-color: #14425a;
+        align-items: center;
+    }
+    .headLogo {
+        height: inherit;
+        width: auto;
+    }
+    .supportServer {
+        margin-left: auto;
+        margin-right: 15px;
+        color: white;
+        text-decoration: none;
+    }
+    .about {
+      margin-right: 15px;
+      color: white;
+      text-decoration: none;
+    }
+    .middle {
+        display: flexbox;
+        position: fixed;
+        background-color: #14425a;
+        width: 30vw;
+        height: 20vw;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 1);
+        padding: 20px;
+        color: white;
+        font-weight: bold;
+    }
+    .welcome {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        top: 3vw;
+        font-size: 2.5vw;
+    }
+    .simple {
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 7vw;
+        font-weight: bold;
+        left: calc(1vw + 2.5%);
+    }
+
+    .way {
+        position: fixed;
+        width: 100%;
+        left: calc(12.5% + 1vw);
+        text-align: center;
+        top: 42%;
+        transform: translateY(-50%);
+        font-size: 1.25vw;
+    }
+    .budgeting {
+        position: fixed;
+        left: 0;
+        top: 66%;
+        transform: translateY(-50%);
+        width: 85%;
+        text-align: center;
+        font-size: 2vw;
+    }
+    .midLogo {
+        position: fixed;
+        width: 7vw;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 6%
+    }
+    .button {
+        position: fixed;
+        top: 80%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 0.5vw 2vw 0.5vw 2vw;
+        font-size: 1.5vw;
+        border-radius: 5px;
+    }
+    .button:hover {
+        cursor: pointer;
+        background-color: #18191A;
+    }
+    .login {
+        left: 30%;
+    }
+    .signup {
+        left: 70%;
+    }
+</style>
 </html>
